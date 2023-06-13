@@ -1,32 +1,66 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div class="app">
+    <div class="nav-app-container">
+      <div class="nav-app">
+        <div class="img-logo">
+          <p>My balance</p>
+
+          <img class="logo" src="@/assets/logo.svg" alt="logo" />
+        </div>
+        <p>$ 921.48</p>
+      </div>
+      <div class="header">
+        <h2>Spending - Last 7 days</h2>
+
+        <p>mon</p>
+        <p>tue</p>
+        <p>wed</p>
+        <p>thu</p>
+        <p>fri</p>
+        <p>sat</p>
+        <p>sun</p>
+      </div>
+    </div>
   </div>
 </template>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style>
+body {
+  margin: 0;
+}
+.app {
+  background-color: #ffeee0;
+  justify-content: center;
+  display: flex;
+  padding-top: 10%;
+  height: 100vh;
+}
+.nav-app-container {
+  width: 40%;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.nav-app {
+  background-color: rgb(245 80 80 / 83%);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.nav-app,
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.valor {
+  display: block;
+}
+.img-logo {
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  background-color: rgba(255, 255, 255, 0.83);
+  color: rgb(53, 53, 53);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  display: block;
 }
 </style>
