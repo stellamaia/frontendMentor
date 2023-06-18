@@ -99,13 +99,13 @@ body {
   margin: 0;
 }
 
-.app{
+.app {
   background-color: #ffeee0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .title-balance {
   font-size: 13px;
 }
@@ -118,7 +118,6 @@ body {
   color: white;
   border-radius: 10px;
   padding: 20px;
-
 }
 .nav-app,
 .header {
@@ -140,7 +139,7 @@ body {
   padding: 20px;
   margin-top: 20px;
   display: block;
-box-shadow: 1px 15px 20px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 15px 20px 8px rgba(0, 0, 0, 0.2);
 }
 .title-header {
   font-size: 20px;
@@ -183,12 +182,8 @@ box-shadow: 1px 15px 20px 8px rgba(0, 0, 0, 0.2);
   padding: 0 10px 0 10px;
 }
 @media screen and (max-width: 480px) {
-
   .header {
     padding: 0;
   }
- 
 }
-
-
 </style>
